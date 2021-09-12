@@ -169,7 +169,7 @@ body {
     animation: show-Itself 15s linear 4s ;
 }
 
-/*? BIRD */
+/*?________BIRD________?*/
 
 @keyframes bird {
     from {
@@ -184,10 +184,15 @@ body {
     0% {
         left: 0;
         top: 6%;
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
     }
     100% {
-        left: 200%;
+        left: 100%;
         top: 6%;
+        opacity: 0;
     }
 }
 
@@ -197,6 +202,34 @@ body {
     height: 69px;
     /* top: 6%;
     left: 6%; */
+    opacity: 0;
     background: url('../images/sprites/bird2.png');
-    animation: bird 0.8s steps(4) infinite 4s, birdMove 16s linear 4s; 
+    animation: bird 0.8s steps(4) infinite 4s, birdMove 8s linear 4s; 
+}
+
+/*?________CAR1________?*/
+
+@keyframes car1 {
+    0% {
+        left: -20%;
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+.car1 {
+    position: absolute;
+    width: 640px;  
+    height: 320px; 
+    /* left: 20%; */
+    top: 30%;
+    background: url('../images/sprites/car1.png') no-repeat;
+    opacity: 0;
+    animation: car1 3s linear 6s;
 }
