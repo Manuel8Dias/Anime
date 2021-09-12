@@ -286,7 +286,6 @@ body {
     /* left: 20%;  */
     top: 30%;
     background: url('../images/sprites/car3.png') no-repeat;
-    /* transform: rotateY(180deg); */
     opacity: 0;
     z-index: 70;
     animation: car3 7s linear 4s;
@@ -315,7 +314,6 @@ body {
     /* right: 20%;  */
     top: 20%;
     background: url('../images/sprites/car4.png') no-repeat;
-    /* transform: rotateY(180deg); */
     opacity: 0;
     z-index: 60;
     animation: car4 6s linear 10s;
@@ -323,6 +321,80 @@ body {
 
 /*?________BOY________?*/
 
+@keyframes boy-walk {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 4098px ;
+    }
+}
+
+@keyframes boyMove {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    99% {
+        left: 100%;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
 .boy {
+    position: absolute;
+    width: 273.2px;
+    height: 251px;
+    top: 17%;
+    /* left: 20%; */
+    background: url('../images/sprites/boy_walk4.png');
+    opacity: 0;
+    animation: boy-walk 0.8s steps(15) infinite, boyMove 12s linear 6s;
 
 }
+
+/*?________GIRL________?*/
+
+@keyframes girl-walk {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 4583px;
+    }
+}
+
+@keyframes girlMove {
+    0% {
+        right: 0;
+        opacity: 1;
+    }
+    99% {
+        right: 100%;
+        opacity: 1;
+    }
+    100% {
+        right: 100%;
+        opacity: 0;
+    }
+}
+
+.girl {
+    position: absolute;
+    width: 229.5px;
+    height: 251px;
+    top: 60%; 
+    /* right: 20%; */
+    background: url('../images/sprites/girl_walk4.png');
+    transform: rotateY(180deg);
+    opacity: 0;
+    z-index: 110;
+    animation: girl-walk 1s steps(20) infinite, girlMove 15s linear 5s;
+}
+
+/**-----------FINAL-----------**/
+
