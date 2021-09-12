@@ -211,7 +211,7 @@ body {
 
 @keyframes car1 {
     0% {
-        left: -20%;
+        left: -40%;
         opacity: 1;
     }
     99%{
@@ -227,9 +227,102 @@ body {
     position: absolute;
     width: 640px;  
     height: 320px; 
-    /* left: 20%; */
+    /* left: 20%;  */
     top: 30%;
     background: url('../images/sprites/car1.png') no-repeat;
     opacity: 0;
-    animation: car1 3s linear 6s;
+    z-index: 70;
+    animation: car1 5s linear 8s;
+}
+
+/*?________CAR2________?*/
+
+@keyframes car2 {
+    0% {
+        right: -40%;
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100% {
+        right: 120%;
+        opacity: 0;
+    }
+}
+
+.car2 {
+    position: absolute;
+    width: 640px;  
+    height: 320px; 
+    /* right: 20%;  */
+    top: 20%;
+    background: url('../images/sprites/car2.png') no-repeat;
+    opacity: 0;
+    z-index: 60;
+    animation: car2 5s linear 6s;
+}
+
+/*?________CAR3________?*/
+
+@keyframes car3 {
+    0% {
+        left: -40%;
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+.car3 {
+    position: absolute;
+    width: 640px;  
+    height: 320px; 
+    /* left: 20%;  */
+    top: 30%;
+    background: url('../images/sprites/car3.png') no-repeat;
+    /* transform: rotateY(180deg); */
+    opacity: 0;
+    z-index: 70;
+    animation: car3 7s linear 4s;
+}
+
+/*?________CAR4________?*/
+
+@keyframes car4 {
+    0% {
+        right: -40%;
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100% {
+        right: 120%;
+        opacity: 0;
+    }
+}
+
+.car4 {
+    position: absolute;
+    width: 640px;  
+    height: 320px; 
+    /* right: 20%;  */
+    top: 20%;
+    background: url('../images/sprites/car4.png') no-repeat;
+    /* transform: rotateY(180deg); */
+    opacity: 0;
+    z-index: 60;
+    animation: car4 6s linear 10s;
+}
+
+/*?________BOY________?*/
+
+.boy {
+
 }
