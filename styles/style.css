@@ -404,6 +404,15 @@ body {
     }
 }
 
+@keyframes come {
+    0% {
+        transform:  translate(0, -100%);
+    }
+    100% {
+        transform:  translate(0, 0);
+    }
+}
+
 .finish {
     position: absolute;
     width: 100%;
@@ -416,5 +425,25 @@ body {
     justify-content: center;
     opacity: 1;
     color: #ddd;
-    animation: ;
+    background-color: #000 ;
+    animation: vanish 14s linear, come 3s ease 14s;
+}
+
+.snow-gb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: vanish 19s linear, come 3s ease 19s;
+    opacity: 1;
+}
+
+.snow-gb video {
+    min-height: 100%;
+    min-height: 100%;
+}
+
+.finish h1 {
+    font-size: 90px;
+    z-index: 50;
+    text-shadow: 0px 0px 14px rgb(201, 201, 201);
 }
